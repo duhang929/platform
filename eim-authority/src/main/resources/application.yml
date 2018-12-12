@@ -1,0 +1,7 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: eim-authority
+  profiles:
+    active: dev # ╪стьеДжцнд╪Ч

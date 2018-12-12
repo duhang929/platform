@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false # 使用主机名来定义注册中心的地址
+  server:
+    enable-self-preservation: false # 关闭保护模式
+  client:
+    register-with-eureka: false #由于自己就是服务器，不需要注册到自己
+    fetch-registry: false #由于自己就是服务器，不需要从服务器获取注册信息
+    serviceUrl:
+      defaultZone: http://user:user123@${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  security:
+    user:
+      name: user
+      password: user123
