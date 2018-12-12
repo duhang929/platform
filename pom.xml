@@ -73,7 +73,6 @@
             <url>http://10.143.132.59:8081/repository/maven-public/</url>
         </pluginRepository>
     </pluginRepositories>
-
     <build>
         <pluginManagement>
             <plugins>
