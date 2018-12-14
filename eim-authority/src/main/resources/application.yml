@@ -4,4 +4,4 @@ spring:
   application:
     name: eim-authority
   profiles:
-    active: dev # ╪стьеДжцнд╪Ч
+    active: dev

@@ -12,6 +12,7 @@
     <modules>
         <module>eim-eureka</module>
         <module>eim-authority</module>
+        <module>eim-finance</module>
     </modules>
 
     <properties>
@@ -24,6 +25,7 @@
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
         <maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
         <maven-war-plugin.version>3.0.0</maven-war-plugin.version>
+        <springfox-swagger2.version>2.5.0</springfox-swagger2.version>
         <spring-boot-maven-plugin.version>1.5.16.RELEASE</spring-boot-maven-plugin.version>
     </properties>
 
