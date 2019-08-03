@@ -2,10 +2,10 @@ spring:
   datasource:
     name: datasource
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/stars?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/stars?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     #url: jdbc:mysql://10.143.132.169:3306/testview?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: 123456
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
       initialSize: 2  #初始化时建立物理连接的个数。初始化发生在显示调用init方法，或者第一次getConnection时
@@ -22,6 +22,6 @@ spring:
       testWhileIdle: true  #建议配置为true，不影响性能，并且保证安全性。申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效
       testOnBorrow: false  #申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能。失效连接主要通过testWhileIdle保证，如果获取到了不可用的数据库连接，一般由应用处理异常。
       testOnReturn: false  #归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能。
-      filters: stat,wall,log4j
+#      filters: stat,wall,log4j
 mybatis:
   mapper-locations: classpath:mapper/*.xml #注意：一定要对应mapper映射xml文件的所在路径
