@@ -16,7 +16,7 @@ public class UserInfoController extends BaseController{
 
     private UserService userService;
 
-    // tests 324234
+    // tests 324234 324
     @Autowired
     public void setUserService(UserService userService) {
         this.userService = userService;
