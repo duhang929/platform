@@ -6,7 +6,10 @@
     </sql>
 
     <sql id="BASE_COLUMN">
-        userId,userName,password,phone
+        id AS userId,
+        name AS userName,
+        password AS password,
+        phone AS phone
     </sql>
 
     <insert id="insert" parameterType="com.stars.authority.model.UserInfo">

@@ -1,6 +1,6 @@
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://user:user123@localhost:8080/eureka/
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    serviceUrl:
+#      defaultZone: http://user:user123@localhost:8080/eureka/

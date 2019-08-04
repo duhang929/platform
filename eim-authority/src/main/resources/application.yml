@@ -1,5 +1,7 @@
 server:
-  port: 10001
+  port: 8441
+  servlet:
+    context-path: /v2
 spring:
   application:
     name: eim-authority
