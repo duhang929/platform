@@ -1,0 +1,14 @@
+﻿.datebox-button td{
+    text-align: center;
+}
+.datagrid-header-row {
+    height: 26px;
+}
+
+.datagrid-header td, .datagrid-body td, .datagrid-footer td {
+    border-style: solid;
+}
+
+.validatebox-invalid {
+    background-color: white;
+}

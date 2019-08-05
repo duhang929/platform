@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="height: 100%;width: 100%">
+<head>
+    <script type="text/javascript" src="../head_easyui.js"></script>
+
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="'+basePath+'views/grid/grid.js"> </sc' + 'ript>');
+    </script>
+    <title>Title</title>
+    <style type="text/css">
+        .mergeCell_class {
+            height: 26px;
+        }
+        .body100{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body class="body100">
+<div id="cc" class="easyui-layout" style="width:100%;height:98%;">
+    <div data-options="region:'west'" title="左侧区域" style="width:50%;height: 100%">
+        <table id="left_table"></table>
+
+    </div>
+    <div data-options="region:'center'" title="右侧区域" style="width:50%;height: 100%">
+        <div>
+            <span id="right_span"></span>
+        </div>
+        <div>
+            <input id="dateInput"/>
+        </div>
+        <div style="margin-top: 50px;">
+            <a id="serch_btn1"  class="easyui-linkbutton" data-options="iconCls:'icon-search'">查询1</a>
+            <a id="serch_btn2"  class="easyui-linkbutton" data-options="iconCls:'icon-search'">查询2</a>
+        </div>
+        <div >
+            <table id="right_table"></table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
