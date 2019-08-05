@@ -3,6 +3,7 @@ package com.stars.authority.service;
 import com.stars.authority.dao.UserDao;
 import com.stars.authority.model.UserInfo;
 import org.apache.catalina.User;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
