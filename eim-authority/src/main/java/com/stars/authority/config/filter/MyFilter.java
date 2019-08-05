@@ -21,7 +21,7 @@ public class MyFilter implements Filter {
         String contextPath = request.getContextPath();
         String url = path.substring(contextPath.length());
 
-        if(url.startsWith(NO_FILTER_DIRECTORY_COMMON)){
+        if(url.startsWith(NO_FILTER_DIRECTORY_COMMON) && url.endsWith(".html")){
             System.err.println(String.format("访问views资源,路径为[%s]",url));
         }
         filterChain.doFilter(servletRequest,servletResponse);

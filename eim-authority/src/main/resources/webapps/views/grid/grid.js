@@ -31,7 +31,7 @@ $(function () {
       */
     handler.getMyMsg = function(){
         $.ajax({
-            url:"user/info",
+            url:data_basePath+"user/info",
 
             type:"get",
             dataType:"json",
@@ -188,10 +188,6 @@ $(function () {
         {name:"伍定远",age:48,sex:"男",sfzh:"710523198302043_01",hf:"是",xl:"博士",work:"教书的"},
         {name:"伍定远",age:41,sex:"男",sfzh:"710523198302043_02",hf:"是",xl:"小学",work:"大都督"},
         {name:"伍定远",age:41,sex:"男",sfzh:"710523198302043_03",hf:"否",xl:"博士",work:"教书的"},
-
-
-
     ]
-
 
 })(window,jQuery)
