@@ -2,10 +2,10 @@ spring:
   datasource:
     name: datasource
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/stars?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/lmy?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     #url: jdbc:mysql://10.143.132.169:3306/testview?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: root
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
       initialSize: 2  #初始化时建立物理连接的个数。初始化发生在显示调用init方法，或者第一次getConnection时
