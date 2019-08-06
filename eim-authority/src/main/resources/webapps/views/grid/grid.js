@@ -31,14 +31,15 @@ $(function () {
       */
     handler.getMyMsg = function(){
         $.ajax({
-            url:data_basePath+"user/info",
+            url:data_basePath+"selectController/test",
 
             type:"get",
             dataType:"json",
             success:function (data) {
                 if(!data) return;
 
-                jQueryObj.$right_span.text(data[0].userName);
+                console.log(data);
+                jQueryObj.$right_span.text(data[0].name);
             }
         })
 
